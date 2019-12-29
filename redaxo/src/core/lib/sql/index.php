@@ -13,10 +13,22 @@ class rex_sql_index
     public const UNIQUE = 'UNIQUE';
     public const FULLTEXT = 'FULLTEXT';
 
+    /**
+     * @var string
+     */
     private $name;
+    /**
+     * @var string
+     */
     private $type;
+    /**
+     * @var string[]
+     */
     private $columns;
 
+    /**
+     * @var bool
+     */
     private $modified = false;
 
     /**
