@@ -13,9 +13,18 @@ class rex_timer
     public const MILLISEC = 1000;
     public const MICROSEC = 1000000;
 
+    /**
+     * @var float[]
+     */
     public static $serverTimings = [];
 
+    /**
+     * @var float
+     */
     private $start;
+    /**
+     * @var float
+     */
     private $duration;
 
     /**
